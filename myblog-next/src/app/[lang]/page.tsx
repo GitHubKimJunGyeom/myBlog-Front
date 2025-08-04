@@ -1,8 +1,19 @@
 import Image from "next/image";
-
-export default function Home() {
+// Props의 타입을 정의합니다.
+// 'params'는 { lang: string } 형태의 객체임을 알려줍니다.
+interface HomePageProps {
+  params: {
+    lang: string;
+  };
+}
+export default function Home({ params }: HomePageProps) {
+  const currentLang = params.lang;
   return (
+
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <div>
+        <h1>현재 페이지의 언어는: {currentLang}</h1>
+      </div>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
