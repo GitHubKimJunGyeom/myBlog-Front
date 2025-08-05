@@ -23,4 +23,87 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-family: 'LINESeed';
+}
+
+@theme {
+  --font-geist: "Geist", sans-serif;
+}
+
+/** 영어 */
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/en/LINESeedSans_W_Bd.woff2') format('woff2'),
+         url('/fonts/en/LINESeedSans_W_Bd.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/en/LINESeedSans_W_Rg.woff2') format('woff2'),
+         url('/fonts/en/LINESeedSans_W_Rg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/en/LINESeedSans_W_Th.woff2') format('woff2'),
+         url('/fonts/en/LINESeedSans_W_Th.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/** 한국어 */
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ko/LINESeedKR-Bd.woff2') format('woff2'),
+         url('/fonts/ko/LINESeedKR-Bd.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ko/LINESeedKR-Rg.woff2') format('woff2'),
+         url('/fonts/ko/LINESeedKR-Rg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ko/LINESeedKR-Th.woff2') format('woff2'),
+         url('/fonts/ko/LINESeedKR-Th.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/** 日本語 */
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ja/LINESeedJP_OTF_Bd.woff2') format('woff2'),
+         url('/fonts/ja/LINESeedJP_OTF_Bd.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    unicode-range: U+3000-30FF, U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ja/LINESeedJP_OTF_Rg.woff2') format('woff2'),
+         url('/fonts/ja/LINESeedJP_OTF_Rg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    unicode-range: U+3000-30FF, U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ja/LINESeedJP_OTF_Th.woff2') format('woff2'),
+         url('/fonts/ja/LINESeedJP_OTF_Th.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    unicode-range: U+3000-30FF, U+4E00-9FFF;
 }
