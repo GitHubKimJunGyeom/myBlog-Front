@@ -1,0 +1,74 @@
+{
+  "title": "Log & List",
+  "description": "Log & List는 웹에서 찾은 유용한 정보와 IT 용어, 업무 및 개발을 통해 알게 된 지식을 공유하는 블로그입니다.",
+  "loading": "데이터를 불러 오고 있습니다...",
+  
+  "programming_insight_list": "개발 인사이트",
+  "programming_insight_list_description": "다년간 일본에서 개발자 생활을 하면서 경험한 다양한 기술적 이슈, 해결 과정, 코드 작성 시의 고민, 아키텍처 설계에 대한 인사이트 등을 정리한 내용이다.\n개인적인 경험과 관점을 바탕으로 작성한 것이므로 절대적인 정답은 아닐 수 있다.\n다만 실무에서 겪었던 문제들과 그 과정에서 얻은 깨달음을 기록해 둔 것으로, 같은 고민을 하는 분들에게 작은 참고가 되었으면 한다.",
+
+  "business_insight_list": "업무 인사이트",
+  "business_insight_list_description": "다년간 일본에서 개발자 생활을 하면서 프로젝트 매니저, 프로젝트 리더, 벤더와 같은 많은 개발자분들과의 협업을 통해 알게된 지식이나 지적사항, 개선사항을 정리한 내용이다.\n옳은 정보가 있을 수도있고 아닐수도 있으니 참고에 주의 할 것.\n다만 주니어 시절부터 모아온 소중한 경험이었으나 많은 내용이 유실된 것이 아쉬울 따름이다.",
+  
+  "technical_term_list": "IT용어",
+  "technical_term_list_description": "IT용어리스트입니다.\n현업에서 자주 사용하지만 개인적으로 이해하기 힘들거나 생소한 용어 위주로 게재하고 있습니다.",
+  "tag_nothing": "지금은 태그 기능을 지원하지 않습니다.",
+  
+  "clipping_list": "웹 클리핑",
+  "clipping_list_description": "아쉽지만 웹 클리핑은 다국어를 지원하지 않습니다. \n하지만 tag 기능으로 일본어, 한국어 기사를 구분할 수 있으니 태그 기능을 적극적으로 이용해 주세요.",
+  "clipping_list_rendering_error": "유감스럽지만 이 포스트는 @notion-render/client 모듈의 기술적 한계로 인해 불러오는 것에 실패하였습니다.\n수고를 끼쳐 죄송스럽습니다만 기존의 URL을 참고해주시면 대단히 감사하겠습니다.",
+
+  "introduce": "블로그를 소개합니다!",
+  "greeting": "Log & List에 오신것을 환영합니다.",
+  
+  "comment_summary":"댓글 { count }개",
+  "comment_is_mothing": "아직 작성된 댓글이 없습니다.",
+  "comment_placeholder": "댓글 내용을 작성해주세요.",
+  "comment_submit": "댓글 작성하기",
+  "comment_nickname": "닉네임",
+  "comment_password": "댓글 비밀번호",
+  "comment_content": "댓글 내용",
+  "comment_validate":{
+    "nickname": "닉네임을 입력해주세요.",
+    "password": "비밀번호를 입력해주세요.",
+    "content": "댓글 내용을 입력해주세요."
+  },
+  "comment_success": {
+    "title": "댓글 작성 완료",
+    "message": "댓글을 작성해 주셔서 감사합니다."
+  },
+  "comment_error": {
+    "title": "댓글 작성 실패",
+    "message": "댓글 작성에 실패했습니다."
+  },
+  "contact": {
+    "title": "문의",
+    "description": "문의는 아래의 양식을 통해서 해주시면 됩니다.\n메일로 문의를 주실 경우, 답변이 늦어질 수 있습니다.\n양해 부탁드립니다.",
+    "name": "성함",
+    "name_placeholder": "홍길동",
+    "email": "메일주소",
+    "phone": "전화번호",
+    "phone_placeholder": "090-1234-5678",
+    "subject": "문의사항",
+    "subject_placeholder": "문의사항상세",
+    "content": "내용",
+    "content_placeholder": "문의내용",
+    "disabled": "내용의 입력과 확인을 부탁드립니다.",
+    "submit": "송신",
+    "validate": {
+      "name": "성함을 입력해 주세요.",
+      "email": "정확한 메일주소를 입력해 주세요.",
+      "phone": "전화번호를 입력해 주세요.",
+      "subject": "제목을 입력해 주세요.",
+      "content": "내용을 입력해 주세요."
+    },
+    "success": {
+      "title": "송신완료",
+      "message": "문의해 주셔서 감사합니다."
+    },
+    "error": {
+      "title": "송신실패",
+      "message": "송신에 실패했습니다."
+    }
+  },
+  "pathnote":"공지사항"
+}

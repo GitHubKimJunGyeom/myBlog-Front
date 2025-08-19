@@ -1,0 +1,73 @@
+{
+  "title": "Log & List",
+  "description": "Log & Listは、ウェブで見つけた役立つ情報やIT用語、業務および開発の中で得た知識を共有するブログです。",
+  "loading": "データを読み込ませています。。。",
+  
+  "programming_insight_list": "開発インサイト",
+  "programming_insight_list_description": "日本でエンジニアとして長年業務に携わる中で得た、技術的な知見や設計上の工夫、実装時に直面した課題とその対応策などを備忘録的にまとめたものです。\nあくまで個人の経験に基づく内容のため、すべてが正解というわけではありませんが、同じような場面に直面した方々の一助となれば幸いです。",
+
+  "business_insight_list": "業務インサイト",
+  "business_insight_list_description": "長い間日本でエンジニアとして働きながら、プロジェクトマネージャー、プロジェクトリーダー、ベンダーなど、様々な開発者の方々との協業をしながら得た知識や指摘事項、改善点などをまとめた内容だ。\n正しい情報もあれば、そうでもない可能性もあるため、参考にする際はご注意すること。\nただ、ジュニアから蓄積してきた貴重な経験ではあるが、多くの内容が失われてしまったことがもったいない。",
+  
+  "technical_term_list": "IT用語",
+  "technical_term_list_description": "IT用語のリストです。\n現業でよく使いますが、個人的には分かりにくかったり、聞き慣れない用語を中心に掲載しています",
+  "tag_nothing": "只今、タグ機能をサポートしていません。",
+  
+  "clipping_list": "ウェブクリッピング",
+  "clipping_list_description": "残念ながらウェブクリッピングは多言語をサポートしません。\nしかしながら、タグ機能で日本語、韓国語の記事絞り込むことができますのでご利用の方お願い申し上げます。",
+  "clipping_list_rendering_error": "残念ながらこのポストは、notion-render/clientの記述限界なので読み込ませることができませんでした。\n申し訳ありませんが元のURLでポストをご参考下さいますようお願い申し上げます。",
+  
+  "introduce": "ブログ紹介",
+  "greeting": "Log & Listへようこそ",
+  "comment_summary": "コメント{ count }件",
+  "comment_is_mothing": "まだ作成されているコメントがございません。",
+  "comment_placeholder": "コメントを作成してください。",
+  "comment_submit": "コメントを作成する",
+  "comment_nickname": "ニックネーム",
+  "comment_password": "コメントパスワード",
+  "comment_content": "コメント内容",
+  "comment_validate": {
+    "nickname": "ニックネームを入力してください。",
+    "password": "パスワードを入力してください。",
+    "content": "コメント内容を入力してください。"
+  },
+  "comment_success": {
+    "title": "コメント作成完了",
+    "message": "コメントを作成していただき、ありがとうございます。"
+  },
+  "comment_error": {
+    "title": "コメント作成失敗",
+    "message": "コメントの作成に失敗しました。"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "お問い合わせは、下記のフォームからお願いいたします。\nメールでのお問い合わせの場合、回答が遅れる場合がありますので、ご了承ください。",
+    "name": "お名前",
+    "name_placeholder": "山田太郎",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "phone_placeholder": "090-1234-5678",
+    "subject": "お問い合わせ",
+    "subject_placeholder": "お問い合わせの件名",
+    "content": "内容",
+    "content_placeholder": "お問い合わせの内容",
+    "disabled": "内容を入力、確認をお願いします。",
+    "submit": "送信",
+    "validate": {
+      "name": "お名前を入力してください。",
+      "email": "正しいメールアドレスを入力してください。",
+      "phone": "電話番号を入力してください。",
+      "subject": "件名を入力してください。",
+      "content": "内容を入力してください。"
+    },
+    "success": {
+      "title": "送信完了",
+      "message": "お問い合わせありがとうございました。"
+    },
+    "error": {
+      "title": "送信失敗",
+      "message": "送信に失敗しました。"
+    }
+  },
+  "pathnote":"お知らせ"
+}

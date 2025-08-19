@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-import { notFound } from 'next/navigation'; // ✅ App Router 전용
+import { notFound } from 'next/navigation';
 
 type Props = {
   params: { lang: string };
@@ -23,7 +23,7 @@ export default async function IntroducePage({ params }: Props) {
   }
 
   const fileContent = fs.readFileSync(filePath, 'utf8');
-  const { content, data } = matter(fileContent);
+  const { content } = matter(fileContent);
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
