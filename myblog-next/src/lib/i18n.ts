@@ -6,10 +6,10 @@ import koBlog from "@/locales/ko/blog.json";
 import jaBlog from "@/locales/ja/blog.json";
 
 i18n.use(initReactI18next).init({
-  lng: "ja",                        // 초기 언어
+  lng: "ja",
   fallbackLng: "ja",
   resources: {
-    ko: { 
+    ko: {
       blog: koBlog 
     },
     ja: { 
