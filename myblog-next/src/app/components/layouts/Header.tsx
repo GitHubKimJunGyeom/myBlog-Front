@@ -19,7 +19,7 @@ export default function Header() {
           <div className="hidden lg:inline-block lg:py-4">
             <Link href={localePath('introduce')}>
               <Image
-                src="/assets/img/png/LogAndList.png"
+                src="/static/assets/img/png/LogAndList.png"
                 alt="LogAndList"
                 width={128}
                 height={128}
