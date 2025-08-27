@@ -3,8 +3,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-// import SettingsLanguageToggle from './SettingsLanguageToggle';
-// import LayoutCarousel from './LayoutCarousel';
+import LanguageToggle from '../settings/LanguageToggle';
+import Carousel from './Carousel';
 
 export default function Header() {
   const { t } = useTranslation();
@@ -38,11 +38,11 @@ export default function Header() {
             </p>
           </div>
           <div className="py-2 lg:py-12">
-            {/* <SettingsLanguageToggle /> */}
+            <LanguageToggle />
           </div>
         </div>
       </header>
-      {/* <LayoutCarousel /> */}
+      <Carousel />
     </>
   );
 }

@@ -8,12 +8,13 @@ interface NotionState {
   lang: string;
   database: string;
   pageList: string;
-  tags: string[];
+  tags: [] | string[];
   clickedTags: string[];
   formattedData: null;
   fetchDataError: null;
   fetchDataStatus: FetchStatus;
   carousel: typeof carouselItems;
+  resetTags: () => void;
 
   // actions
   setDataBase: (lang: string, nowDataBase: string) => void;
@@ -33,6 +34,7 @@ export const useNotionStore = create<NotionState>((set, get) => ({
   fetchDataError: null,
   fetchDataStatus: "idle",
   carousel: carouselItems,
+  resetTags: () => set({ tags: [] }),
 
   setDataBase: (lang, nowDataBase) => {
     if (nowDataBase === "programming_insight_list") {
