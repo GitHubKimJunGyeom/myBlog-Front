@@ -26,6 +26,78 @@ body {
   font-family: 'LINESeed';
 }
 
+.markdown {
+  @apply font-geist text-neutral-700/90 leading-relaxed;
+
+  h1 {
+    @apply text-2xl sm:text-3xl text-zinc-900 font-[600] mb-6 mt-8;
+  }
+
+  h2 {
+    @apply text-xl sm:text-2xl text-zinc-900 mb-4 mt-8;
+  }
+
+  h3 {
+    @apply text-lg sm:text-xl text-zinc-900 italic mb-4 mt-6 font-[700];
+  }
+
+  h4 {
+    @apply text-base sm:text-lg text-zinc-900 mb-4 mt-6;
+  }
+
+  h5 {
+    @apply text-base text-zinc-900 mt-6;
+  }
+
+  p {
+    @apply mb-4 mt-0;
+  }
+
+  a {
+    @apply text-blue-500 underline hover:text-blue-600;
+  }
+
+  pre {
+    @apply text-sm sm:text-base text-zinc-900 my-4 p-4 rounded-lg overflow-x-auto bg-gray-100;
+  }
+
+  code {
+    @apply text-zinc-900 text-sm px-1.5 py-0.5 bg-neutral-100 rounded;
+  }
+
+  strong {
+    @apply text-neutral-900 italic font-[700];
+  }
+
+  ul, ol {
+    @apply mb-4 mt-4 pl-6;
+  }
+
+  li {
+    @apply mb-1;
+  }
+
+  blockquote {
+    @apply pl-4 border-l-4 border-neutral-300 my-4 italic;
+  }
+
+  hr {
+    @apply my-8 border-neutral-200;
+  }
+
+  img {
+    @apply my-4 rounded-lg w-64;
+  }
+
+  figure {
+    @apply my-4;
+  }
+
+  figcaption {
+    @apply text-sm text-neutral-500 mt-2;
+  }
+}
+
 @theme {
   --font-geist: "Geist", sans-serif;
 }

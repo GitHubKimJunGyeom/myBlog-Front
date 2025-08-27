@@ -28,7 +28,7 @@ export default async function IntroducePage({ params }: Props) {
   const contentHtml = processedContent.toString();
 
   return (
-    <main className="prose mx-auto px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
+    <main className="markdown mx-auto px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
       {/* 
         Optional: <CommonMetaData isArticle={false} />
         Optional: 제목이나 날짜 등 보여주고 싶다면 data.title, data.date 등 추가 가능
