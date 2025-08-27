@@ -1,4 +1,4 @@
-// src/store/notion.ts
+// src/store/notionStore.ts
 import { create } from "zustand";
 import { carouselItems } from "@/constants/carouselItems";
 
@@ -8,15 +8,20 @@ interface NotionState {
   lang: string;
   database: string;
   pageList: string;
-  tags: [] | string[];
+  tags: string[];
   clickedTags: string[];
-  formattedData: null;
-  fetchDataError: null;
+  formattedData: unknown | null;
+  fetchDataError: string | null;
   fetchDataStatus: FetchStatus;
   carousel: typeof carouselItems;
-  resetTags: () => void;
+  recordMap: unknown | null;
 
   // actions
+  resetTags: () => void;
+  setRecordMap: (map: unknown) => void;
+  setFetchStatus: (status: FetchStatus) => void;
+  setFetchError: (message: string | null) => void;
+
   setDataBase: (lang: string, nowDataBase: string) => void;
   setPageList: (nowPageList: string) => void;
   toggleTag: (tag: string) => void;
@@ -34,7 +39,12 @@ export const useNotionStore = create<NotionState>((set, get) => ({
   fetchDataError: null,
   fetchDataStatus: "idle",
   carousel: carouselItems,
+  recordMap: null,
+
   resetTags: () => set({ tags: [] }),
+  setRecordMap: (map) => set({ recordMap: map }),
+  setFetchStatus: (status) => set({ fetchDataStatus: status }),
+  setFetchError: (message) => set({ fetchDataError: message }),
 
   setDataBase: (lang, nowDataBase) => {
     if (nowDataBase === "programming_insight_list") {
@@ -43,9 +53,7 @@ export const useNotionStore = create<NotionState>((set, get) => ({
     set({ database: nowDataBase });
   },
 
-  setPageList: (nowPageList) => {
-    set({ pageList: nowPageList });
-  },
+  setPageList: (nowPageList) => set({ pageList: nowPageList }),
 
   toggleTag: (tag) => {
     const { clickedTags } = get();
@@ -59,30 +67,22 @@ export const useNotionStore = create<NotionState>((set, get) => ({
   fetchNotionData: async (lang, database) => {
     set({ fetchDataStatus: "pending" });
     try {
-      const res = await fetch(
-        `/api/notion/${lang}/database/${database}?tags=${get().clickedTags.join(",")}`,
-        { method: "GET" }
-      ).then((res) => res.json());
-
-      set({ formattedData: res, fetchDataStatus: "success" });
-    } catch (err) {
-      set({ fetchDataError: err, fetchDataStatus: "error" });
+      const res = await fetch(`/api/notion/${lang}/database/${database}?tags=${get().clickedTags.join(",")}`);
+      const data = await res.json();
+      set({ formattedData: data, fetchDataStatus: "success" });
+    } catch (err: any) {
+      set({ fetchDataError: err.message ?? "Unknown error", fetchDataStatus: "error" });
     }
   },
 
   fetchDataBaseTags: async (lang, database) => {
     set({ fetchDataStatus: "pending" });
     try {
-      const res = await fetch(`/api/notion/${lang}/tags/${database}`, {
-        method: "GET",
-      }).then((res) => res.json());
-
-      set({
-        tags: res?.tags ?? [],
-        fetchDataStatus: "success",
-      });
-    } catch (err) {
-      set({ fetchDataError: err, fetchDataStatus: "error" });
+      const res = await fetch(`/api/notion/${lang}/tags/${database}`);
+      const data = await res.json();
+      set({ tags: data?.tags ?? [], fetchDataStatus: "success" });
+    } catch (err: any) {
+      set({ fetchDataError: err.message ?? "Unknown error", fetchDataStatus: "error" });
     }
   },
 }));
