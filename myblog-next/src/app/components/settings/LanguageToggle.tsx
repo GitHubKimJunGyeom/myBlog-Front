@@ -4,8 +4,8 @@ import { useRouter, usePathname } from 'next/navigation'; // Pages Router의 use
 import { useTranslation } from 'react-i18next'; // next-i18next 대신 사용
 
 const locales = [
-  { code: 'ja', displayCode: 'JA' },
-  { code: 'ko', displayCode: 'KO' },
+  { code: 'ja', displayCode: 'JP' },
+  { code: 'ko', displayCode: 'KR' },
 ];
 
 export default function LanguageSwitcher() {
