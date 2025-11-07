@@ -1,4 +1,3 @@
-// src/store/notionStore.ts
 import { create } from "zustand";
 import { carouselItems } from "@/constants/carouselItems";
 

@@ -6,7 +6,7 @@ import "swiper/css";
 
 import Image from "next/image";
 import Link from "next/link";
-import { useNotionStore } from "@/store/notionStore"; // Zustand 예시
+import { useNotionStore } from "@/store/notionStore";
 import { useTranslation } from "react-i18next";
 
 export default function CarouselSection() {
