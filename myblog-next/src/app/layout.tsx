@@ -5,6 +5,7 @@ import { I18nProvider } from "@/providers/i18n-provider";
 import Header from '@/app/components/layouts/Header';
 import Footer from '@/app/components/layouts/Footer';
 import SideBar from '@/app/components/layouts/SideBar';
+import ScrollToTop from './components/layouts/ScrollToTop';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <SideBar />
             </div>
           <Footer />
+          <ScrollToTop />
         </I18nProvider>
       </body>
     </html>
